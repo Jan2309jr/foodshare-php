@@ -25,8 +25,8 @@ FoodShare is a full-stack web application designed to bridge the gap between eve
 
 ### 3. Receiver Functionalities
 - **Public Discovery**: Browse available food listings directly on the landing page without needing to log in.
-- **Smart Requests**: Request food with a single click, which automatically logs the request and triggers a WhatsApp redirection.
-- **WhatsApp Integration**: Automatically generates a pre-filled message to the donor with the receiver's name and email for instant communication.
+- **Smart Requests**: Request food with a single click, which logs the request for the donor to review.
+- **Request Tracking**: View the status of your requests (Pending/Accepted/Rejected) on your dashboard.
 
 ### 4. Admin (Internal Logic)
 - **Status Management**: Automated status updates (Available/Completed) based on donor approvals.
@@ -61,8 +61,3 @@ FoodShare is a full-stack web application designed to bridge the gap between eve
     - Import the `setup.sql` file provided in the project root.
 4.  **Run**: Visit `http://localhost/foodshare-php/` in your browser.
 
-## 📱 WhatsApp Integration Logic
-The system uses the `https://api.whatsapp.com/send` endpoint. When a receiver clicks "Avail", the system constructs a message:
-> "Hi [Donor Name], I'm interested in this food pickup: [Food Name] from FoodShare! My Details: Name: [Receiver Name], Email: [Receiver Email]"
-
-This ensures a zero-friction communication loop between the two parties.
